@@ -6,6 +6,21 @@ nav {
   margin-top: 20px;
 }
 
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+
+    div.links {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+  }
+}
+
 div.links {
   display: flex;
   flex-direction: row;
@@ -32,6 +47,11 @@ nav h3 {
   border-bottom: 1px dotted;
   margin-bottom: 25px;
   margin-top: 25px;
+
+  @media (max-width: 500px) {
+    width: 100%;
+    padding-left: 10px;
+  }
 }
 
 .welcome h3 {
