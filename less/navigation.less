@@ -1,1 +1,60 @@
 // Navigation Styles here
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+
+    div.links {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+  }
+}
+
+div.links {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-between;
+}
+
+div.links a {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  text-align: right;
+  text-decoration: none;
+  color: black;
+}
+
+nav h3 {
+  font-size: 28px;
+  color: black;
+  font-weight: bolder;
+}
+
+.welcome {
+  border-bottom: 1px dotted;
+  margin-bottom: 25px;
+  margin-top: 25px;
+
+  @media (max-width: 500px) {
+    width: 100%;
+    padding-left: 10px;
+  }
+}
+
+.welcome h3 {
+  font-size: 28px;
+  font-weight: bolder;
+}
